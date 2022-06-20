@@ -2,6 +2,7 @@ package com.by.myapp.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerview.adapter = movieAdapter
 
         viewModel.getMovieList().observe(this, Observer {
+            Log.d("TAG", "onCreate: ytf list = " + it.toString())
             movieAdapter.setMovies(it)
         })
 

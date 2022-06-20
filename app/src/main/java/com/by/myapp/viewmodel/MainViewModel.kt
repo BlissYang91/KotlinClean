@@ -20,9 +20,10 @@ class MainViewModel @Inject constructor(private val mainRepository: MainReposito
             val response = mainRepository.getAllMovies()
             if (response.isSuccessful) {
                 movieList.postValue(response.body())
+                progressBarStatus.value = false
             }
         }
-        progressBarStatus.value = false
+
     }
     fun getMovieList() : MutableLiveData<List<Movie>> {
         return movieList;

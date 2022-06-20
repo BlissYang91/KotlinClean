@@ -8,7 +8,7 @@
     android:elevation="8dp"
     app:cardCornerRadius="8dp">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/imageview"
         android:layout_width="match_parent"
         android:scaleType="centerCrop"
