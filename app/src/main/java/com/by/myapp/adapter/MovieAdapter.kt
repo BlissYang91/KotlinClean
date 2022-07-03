@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.by.myapp.databinding.AdapterMovieBinding
-import com.by.myapp.domain.Movie
-import com.by.myapp.util.ValidationUtil
+import com.by.domain.entity.Movie
+import com.by.domain.util.ValidationUtil
 import javax.inject.Inject
 
 class MovieAdapter @Inject constructor() : RecyclerView.Adapter<MainViewHolder>(){

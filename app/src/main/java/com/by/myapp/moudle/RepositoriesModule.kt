@@ -1,7 +1,7 @@
 package com.by.myapp.moudle
 
-import com.by.myapp.repository.MainRepository
-import com.by.myapp.repository.MainRepositoryImpl
+import com.by.domain.repository.MainRepository
+import com.by.data.repositoryImpl.MainRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

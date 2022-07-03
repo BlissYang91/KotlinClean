@@ -1,7 +1,7 @@
 package com.by.myapp.moudle
 
 import android.util.Log
-import com.by.myapp.datasource.ApiService
+import com.by.data.api.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -10,9 +10,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.UnsupportedEncodingException
 import java.net.URLDecoder
-import java.util.concurrent.TimeUnit
 import javax.inject.Named
 import javax.inject.Singleton
 
