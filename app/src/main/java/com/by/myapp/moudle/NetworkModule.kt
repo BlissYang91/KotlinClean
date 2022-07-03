@@ -36,6 +36,7 @@ object NetworkModule {
         val interceptor = HttpLoggingInterceptor { message ->
             try {
                 val text: String = URLDecoder.decode(message, "utf-8")
+//                <-- HTTP FAILED: java.net.UnknownHostException: Unable to resolve host "howtodoandroid.com": No address associated with hostname
                 Log.d("OKHttp ytf 请求成功-----", text)
             } catch (e: Exception) {
                 e.printStackTrace()

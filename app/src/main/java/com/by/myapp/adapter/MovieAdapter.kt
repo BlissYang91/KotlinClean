@@ -4,13 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.DecodeFormat
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.request.RequestListener
-import com.by.myapp.R
 import com.by.myapp.databinding.AdapterMovieBinding
 import com.by.myapp.domain.Movie
-import com.by.myapp.util.TransformationUtils
 import com.by.myapp.util.ValidationUtil
 import javax.inject.Inject
 
